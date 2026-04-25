@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Ultimate Kids Edition &mdash; Conversations That Change Everything</title>
+<meta name="description" content="7 soul-building levels + 3 bonus editions. A digital question deck for families with kids of all ages. Real conversations. Real connection. Real family.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,700;1,9..144,900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+/* ─────────────────────────────────────────────────────
+PALETTE — Jewel editorial. Warm + Vivid + Premium.
+Plum:        #3B1F5E  (deep, rich, memorable)
+Coral:       #E84C2B  (electric, urgent, alive)
+Gold:        #E8A825  (warm, celebratory, premium)
+Sage:        #4A7C5F  (growth, trust, calm)
+Pale ivory:  #FAF7F2  (breathing room)
+Off-white:   #F3EFE8  (section alt)
+Ink:         #1A0E2E  (warm black)
+Body text:   #2E2040  (readable, rich)
+───────────────────────────────────────────────────── */
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+
+body {
+font-family: ‘DM Sans’, ‘Helvetica Neue’, sans-serif;
+background: #FAF7F2;
+color: #1A0E2E;
+overflow-x: hidden;
+}
+
+/* ── ANNOUNCE BAR ── */
+.announce {
+background: #E84C2B;
+text-align: center;
+padding: 10px 16px;
+font-size: 12px;
+font-weight: 600;
+color: #ffffff;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+/* ── NAV ── */
+nav {
+background: #FAF7F2;
+border-bottom: 1.5px solid #E0D8CC;
+padding: 18px 48px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: sticky;
+top: 0;
+z-index: 200;
+box-shadow: 0 1px 20px rgba(59,31,94,0.06);
+}
+.logo {
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: 21px;
+font-weight: 900;
+color: #1A0E2E;
+text-decoration: none;
+letter-spacing: -0.5px;
+}
+.logo em { font-style: italic; color: #E84C2B; }
+.nav-btn {
+background: #1A0E2E;
+color: #FAF7F2;
+font-size: 13px;
+font-weight: 600;
+padding: 11px 26px;
+border-radius: 3px;
+text-decoration: none;
+letter-spacing: 0.3px;
+transition: background .2s;
+}
+.nav-btn:hover { background: #3B1F5E; }
+
+/* ── HERO ── */
+.hero {
+background: #1A0E2E;
+min-height: 100vh;
+display: grid;
+grid-template-columns: 1fr 1fr;
+position: relative;
+overflow: hidden;
+}
+
+/* left panel */
+.hero-left {
+padding: 100px 64px 100px 80px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+position: relative;
+z-index: 2;
+}
+.hero-eyebrow {
+display: flex;
+align-items: center;
+gap: 12px;
+margin-bottom: 32px;
+}
+.hero-eyebrow-line { width: 40px; height: 2px; background: #E8A825; }
+.hero-eyebrow-text {
+font-size: 11px;
+font-weight: 600;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #E8A825;
+}
+.hero h1 {
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: clamp(48px, 5.5vw, 88px);
+font-weight: 900;
+line-height: 0.96;
+color: #ffffff;
+letter-spacing: -3px;
+margin-bottom: 32px;
+}
+.hero h1 em {
+font-style: italic;
+color: #E84C2B;
+display: block;
+}
+.hero h1 .gold { color: #E8A825; display: block; }
+.hero-desc {
+font-size: 17px;
+color: rgba(255,255,255,0.6);
+font-weight: 300;
+line-height: 1.85;
+max-width: 420px;
+margin-bottom: 48px;
+}
+.hero-desc strong { color: rgba(255,255,255,0.92); font-weight: 500; }
+.hero-actions { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+.btn-primary {
+display: inline-block;
+background: #E84C2B;
+color: #ffffff;
+font-size: 16px;
+font-weight: 600;
+padding: 18px 44px;
+border-radius: 3px;
+text-decoration: none;
+letter-spacing: 0.3px;
+box-shadow: 0 12px 40px rgba(232,76,43,0.45);
+transition: transform .2s, box-shadow .2s;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 20px 50px rgba(232,76,43,0.55); }
+.btn-note { font-size: 12px; color: rgba(255,255,255,0.32); letter-spacing: 0.5px; }
+
+/* right panel */
+.hero-right {
+background: #3B1F5E;
+padding: 100px 64px 100px 56px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+position: relative;
+overflow: hidden;
+}
+.hero-right::before {
+content: ‘’;
+position: absolute;
+width: 500px; height: 500px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(232,168,37,0.12) 0%, transparent 65%);
+top: -100px; right: -100px;
+pointer-events: none;
+}
+.price-tag {
+font-size: 11px;
+font-weight: 600;
+letter-spacing: 2.5px;
+text-transform: uppercase;
+color: rgba(255,255,255,0.4);
+margin-bottom: 8px;
+}
+.price-num {
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: 80px;
+font-weight: 900;
+color: #E8A825;
+line-height: 1;
+letter-spacing: -3px;
+margin-bottom: 4px;
+}
+.price-sub { font-size: 13px; color: rgba(255,255,255,0.35); margin-bottom: 40px; }
+.hero-includes { display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px; }
+.hi {
+display: flex;
+align-items: flex-start;
+gap: 14px;
+padding: 16px 20px;
+background: rgba(255,255,255,0.05);
+border-radius: 6px;
+border-left: 3px solid #E84C2B;
+}
+.hi-icon { font-size: 22px; flex-shrink: 0; }
+.hi-label { font-size: 13px; font-weight: 600; color: #ffffff; margin-bottom: 2px; }
+.hi-desc { font-size: 12px; color: rgba(255,255,255,0.45); line-height: 1.5; font-weight: 300; }
+.hero-buy-btn {
+display: block;
+width: 100%;
+background: #E8A825;
+color: #1A0E2E;
+font-size: 16px;
+font-weight: 700;
+padding: 18px;
+border-radius: 3px;
+text-decoration: none;
+text-align: center;
+letter-spacing: 0.3px;
+transition: opacity .2s, transform .15s;
+}
+.hero-buy-btn:hover { opacity: .92; transform: translateY(-1px); }
+
+/* ── BIG STAT BAR ── */
+.stat-bar {
+background: #E84C2B;
+padding: 0;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+}
+.sb-item {
+padding: 36px 24px;
+text-align: center;
+border-right: 1px solid rgba(255,255,255,0.15);
+position: relative;
+}
+.sb-item:last-child { border-right: none; }
+.sb-num {
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: 52px;
+font-weight: 900;
+color: #ffffff;
+line-height: 1;
+letter-spacing: -2px;
+}
+.sb-label {
+font-size: 11px;
+font-weight: 600;
+color: rgba(255,255,255,0.7);
+letter-spacing: 2px;
+text-transform: uppercase;
+margin-top: 6px;
+}
+
+/* ── SHARED ── */
+.sec { padding: 100px 48px; }
+.inn { max-width: 740px; margin: 0 auto; }
+.inn.wide { max-width: 1040px; }
+.inn.mid { max-width: 860px; }
+.bg-ivory { background: #FAF7F2; }
+.bg-off   { background: #F3EFE8; }
+.bg-wh    { background: #ffffff; }
+.bg-ink   { background: #1A0E2E; }
+.bg-plum  { background: #3B1F5E; }
+
+/* ── SECTION LABEL ── */
+.slabel {
+display: inline-flex;
+align-items: center;
+gap: 10px;
+font-size: 10px;
+font-weight: 700;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #E84C2B;
+margin-bottom: 20px;
+}
+.slabel::before { content:’’; width:24px; height:2px; background:#E84C2B; }
+
+/* ── HEADINGS ── */
+h2.bh {
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: clamp(36px, 4.5vw, 62px);
+font-weight: 900;
+line-height: 1.02;
+color: #1A0E2E;
+letter-spacing: -2px;
+margin-bottom: 28px;
+}
+h2.bh em { font-style: italic; color: #E84C2B; }
+h2.bh.on-dark { color: #ffffff; }
+h2.bh.on-dark em { color: #E8A825; }
+
+/* ── BODY ── */
+.p {
+font-size: 17px;
+line-height: 1.9;
+color: #2E2040;
+font-weight: 300;
+margin-bottom: 22px;
+}
+.p strong { font-weight: 600; color: #1A0E2E; }
+.p.on-dark { color: rgba(255,255,255,0.6); }
+.p.on-dark strong { color: #ffffff; }
+
+/* ── PULL QUOTE ── */
+.pullquote {
+margin: 48px 0;
+padding: 36px 44px;
+background: #3B1F5E;
+border-radius: 4px;
+position: relative;
+}
+.pullquote::before {
+content: ‘\201C’;
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: 140px;
+color: rgba(232,168,37,0.15);
+position: absolute;
+top: -20px; left: 20px;
+line-height: 1;
+pointer-events: none;
+}
+.pullquote p {
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: clamp(20px, 2.5vw, 28px);
+font-style: italic;
+font-weight: 700;
+color: #ffffff;
+line-height: 1.45;
+position: relative;
+}
+
+/* ── ALTERNATING SPLIT ── */
+.split {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 0;
+overflow: hidden;
+}
+.split-text {
+padding: 96px 72px 96px 80px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.split-visual {
+position: relative;
+overflow: hidden;
+min-height: 560px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* ── PAIN POINTS ── */
+.pain-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2px;
+margin-top: 48px;
+background: #E0D8CC;
+border: 2px solid #E0D8CC;
+border-radius: 8px;
+overflow: hidden;
+}
+.pain-item {
+background: #FAF7F2;
+padding: 32px 28px;
+display: flex;
+gap: 16px;
+align-items: flex-start;
+}
+.pain-mark {
+width: 28px; height: 28px;
+background: rgba(232,76,43,0.1);
+border-radius: 50%;
+display: flex; align-items: center; justify-content: center;
+font-size: 12px;
+color: #E84C2B;
+flex-shrink: 0;
+font-weight: 700;
+margin-top: 2px;
+}
+.pain-text { font-size: 15px; color: #2E2040; line-height: 1.65; font-weight: 300; }
+.pain-text strong { font-weight: 600; color: #1A0E2E; }
+
+/* ── TRANSFORMATION CARDS ── */
+.transform-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+margin-top: 48px;
+}
+.tc-big {
+background: #FAF7F2;
+border: 1.5px solid #E0D8CC;
+border-radius: 8px;
+padding: 36px 28px;
+position: relative;
+overflow: hidden;
+transition: transform .2s, box-shadow .2s;
+}
+.tc-big:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(59,31,94,0.12); }
+.tc-big::after {
+content: ‘’;
+position: absolute;
+bottom: 0; left: 0; right: 0;
+height: 3px;
+background: #E84C2B;
+}
+.tc-num {
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: 52px;
+font-weight: 900;
+color: #E0D8CC;
+line-height: 1;
+margin-bottom: 16px;
+letter-spacing: -2px;
+}
+.tc-title {
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: 22px;
+font-weight: 700;
+color: #1A0E2E;
+margin-bottom: 12px;
+line-height: 1.2;
+}
+.tc-body { font-size: 14px; color: #2E2040; line-height: 1.72; font-weight: 300; }
+
+/* ── LEVEL CARDS ── */
+.level-grid { display: grid; gap: 0; margin-top: 48px; }
+.lc {
+display: grid;
+grid-template-columns: 80px 1fr;
+gap: 0;
+border-bottom: 1.5px solid #E0D8CC;
+background: #ffffff;
+transition: background .15s;
+}
+.lc:first-child { border-top: 1.5px solid #E0D8CC; border-radius: 8px 8px 0 0; }
+.lc:last-child { border-radius: 0 0 8px 8px; }
+.lc:hover { background: #FAF7F2; }
+.lc-num-col {
+background: #3B1F5E;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 28px 16px;
+flex-direction: column;
+gap: 4px;
+}
+.lc-num {
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: 28px;
+font-weight: 900;
+color: #E8A825;
+line-height: 1;
+}
+.lc-icon { font-size: 18px; }
+.lc-body { padding: 28px 32px; }
+.lc-level {
+font-size: 10px;
+font-weight: 700;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #E84C2B;
+margin-bottom: 4px;
+}
+.lc-title {
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: 20px;
+font-weight: 700;
+color: #1A0E2E;
+margin-bottom: 4px;
+}
+.lc-theme {
+display: inline-block;
+background: rgba(74,124,95,0.1);
+color: #4A7C5F;
+font-size: 11px;
+font-weight: 600;
+padding: 2px 10px;
+border-radius: 50px;
+margin-bottom: 10px;
+letter-spacing: 0.3px;
+}
+.lc-desc { font-size: 13px; color: #2E2040; line-height: 1.65; font-weight: 300; }
+
+/* ── BONUS CARDS ── */
+.bonus-row {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+margin-top: 48px;
+}
+.bc {
+border-radius: 8px;
+padding: 36px 28px;
+position: relative;
+overflow: hidden;
+}
+.bc1 { background: #3B1F5E; }
+.bc2 { background: #1A0E2E; border: 1.5px solid #3B1F5E; }
+.bc3 { background: #4A7C5F; }
+.bc-tag {
+display: inline-block;
+background: rgba(255,255,255,0.15);
+color: rgba(255,255,255,0.8);
+font-size: 10px;
+font-weight: 700;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+padding: 4px 12px;
+border-radius: 50px;
+margin-bottom: 20px;
+}
+.bc-icon { font-size: 32px; margin-bottom: 16px; display: block; }
+.bc-title {
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: 20px;
+font-weight: 700;
+color: #ffffff;
+margin-bottom: 10px;
+line-height: 1.2;
+}
+.bc-desc { font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.7; font-weight: 300; }
+
+/* ── TESTIMONIALS ── */
+.testi-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+margin-top: 48px;
+}
+.tcard {
+background: #FAF7F2;
+border: 1.5px solid #E0D8CC;
+border-radius: 8px;
+padding: 32px 28px;
+position: relative;
+}
+.tcard::before {
+content: ‘\201C’;
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: 100px;
+color: #3B1F5E;
+opacity: 0.08;
+position: absolute;
+top: 4px; left: 18px;
+line-height: 1;
+}
+.tcard-stars { color: #E8A825; font-size: 14px; margin-bottom: 14px; }
+.tcard-text {
+font-size: 15px;
+color: #2E2040;
+line-height: 1.75;
+font-style: italic;
+font-weight: 300;
+margin-bottom: 20px;
+position: relative;
+}
+.tcard-name { font-weight: 600; font-size: 13px; color: #1A0E2E; }
+.tcard-role { font-size: 12px; color: #8A7A9A; margin-top: 2px; }
+
+/* ── PROMISE BANNER ── */
+.promise {
+background: #E84C2B;
+padding: 80px 48px;
+text-align: center;
+position: relative;
+overflow: hidden;
+}
+.promise::before {
+content: ‘’;
+position: absolute;
+inset: 0;
+background: repeating-linear-gradient(
+-55deg,
+transparent,
+transparent 48px,
+rgba(255,255,255,0.03) 48px,
+rgba(255,255,255,0.03) 96px
+);
+}
+.promise h3 {
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: clamp(28px, 4vw, 52px);
+font-weight: 900;
+color: #ffffff;
+line-height: 1.12;
+letter-spacing: -1.5px;
+max-width: 800px;
+margin: 0 auto;
+position: relative;
+}
+.promise h3 em { font-style: italic; color: #FAF7F2; opacity: 0.85; }
+
+/* ── CTA ── */
+.cta-section {
+background: #1A0E2E;
+padding: 100px 48px;
+position: relative;
+overflow: hidden;
+}
+.cta-section::before {
+content: ‘’;
+position: absolute;
+width: 800px; height: 800px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(232,76,43,0.1) 0%, transparent 60%);
+top: -300px; right: -200px;
+pointer-events: none;
+}
+.cta-section::after {
+content: ‘’;
+position: absolute;
+width: 600px; height: 600px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(59,31,94,0.4) 0%, transparent 65%);
+bottom: -200px; left: -100px;
+pointer-events: none;
+}
+.cta-inner {
+max-width: 640px;
+margin: 0 auto;
+text-align: center;
+position: relative;
+}
+.cta-kicker {
+font-size: 11px;
+font-weight: 600;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #E8A825;
+margin-bottom: 24px;
+}
+.cta-h {
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: clamp(36px, 5vw, 64px);
+font-weight: 900;
+color: #ffffff;
+line-height: 1.02;
+letter-spacing: -2px;
+margin-bottom: 20px;
+}
+.cta-h em { font-style: italic; color: #E84C2B; }
+.cta-sub {
+font-size: 16px;
+color: rgba(255,255,255,0.5);
+font-weight: 300;
+line-height: 1.8;
+margin-bottom: 48px;
+}
+.cta-price-display {
+display: flex;
+align-items: baseline;
+justify-content: center;
+gap: 6px;
+margin-bottom: 8px;
+}
+.cta-dollar {
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: 32px;
+font-weight: 700;
+color: rgba(255,255,255,0.5);
+line-height: 1;
+}
+.cta-price-big {
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: 88px;
+font-weight: 900;
+color: #E8A825;
+line-height: 1;
+letter-spacing: -4px;
+}
+.cta-price-note { font-size: 13px; color: rgba(255,255,255,0.3); margin-bottom: 36px; letter-spacing: 0.5px; }
+.cta-main-btn {
+display: block;
+width: 100%;
+background: #E84C2B;
+color: #ffffff;
+font-size: 18px;
+font-weight: 700;
+padding: 22px;
+border-radius: 3px;
+text-decoration: none;
+box-shadow: 0 12px 40px rgba(232,76,43,0.4);
+transition: transform .2s, box-shadow .2s;
+letter-spacing: 0.3px;
+margin-bottom: 28px;
+}
+.cta-main-btn:hover { transform: translateY(-2px); box-shadow: 0 20px 50px rgba(232,76,43,0.52); }
+
+/* CTA includes */
+.cta-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+margin-bottom: 28px;
+text-align: left;
+}
+.ci {
+display: flex;
+align-items: flex-start;
+gap: 10px;
+font-size: 13px;
+color: rgba(255,255,255,0.55);
+font-weight: 300;
+line-height: 1.4;
+}
+.ci-dot { width:6px; height:6px; border-radius:50%; background:#4A7C5F; flex-shrink:0; margin-top:5px; }
+.ci strong { color: rgba(255,255,255,0.85); font-weight: 600; }
+.cta-divider { height: 1px; background: rgba(255,255,255,0.08); margin: 24px 0; }
+.cta-guar { font-size: 13px; color: rgba(255,255,255,0.28); line-height: 1.65; }
+.cta-guar a { color: #E8A825; text-decoration: none; }
+
+/* ── FOOTER ── */
+footer {
+background: #0E0820;
+padding: 64px 48px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 24px;
+}
+.footer-brand {
+font-family: ‘Fraunces’, Georgia, serif;
+font-size: 20px;
+font-weight: 900;
+color: #ffffff;
+}
+.footer-brand em { font-style: italic; color: #E8A825; }
+footer p { font-size: 13px; color: rgba(255,255,255,0.25); line-height: 1.8; }
+footer a { color: #E84C2B; text-decoration: none; }
+
+/* ── MOBILE ── */
+@media (max-width: 1024px) {
+.hero { grid-template-columns: 1fr; min-height: auto; }
+.hero-left { padding: 80px 32px; }
+.hero-right { padding: 64px 32px; }
+.split { grid-template-columns: 1fr; }
+.split-text { padding: 64px 32px; }
+.transform-grid { grid-template-columns: 1fr; }
+.bonus-row { grid-template-columns: 1fr; }
+.testi-grid { grid-template-columns: 1fr; }
+.pain-grid { grid-template-columns: 1fr; }
+.cta-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+nav { padding: 14px 20px; }
+.nav-btn { padding: 9px 16px; font-size: 12px; }
+.sec { padding: 72px 20px; }
+.stat-bar { grid-template-columns: 1fr 1fr; }
+.sb-item { padding: 28px 16px; }
+.cta-section { padding: 72px 20px; }
+.cta-price-big { font-size: 64px; }
+.lc { grid-template-columns: 60px 1fr; }
+.promise { padding: 64px 24px; }
+footer { padding: 48px 24px; flex-direction: column; }
+}
+</style>
+
+</head>
+<body>
+
+<!-- ANNOUNCE -->
+
+<div class="announce">
+  &#127775; 7 Soul-Building Levels + 3 Bonus Editions &nbsp;&middot;&nbsp; Digital PDF &nbsp;&middot;&nbsp; All Ages &nbsp;&middot;&nbsp; Instant Download
+</div>
+
+<!-- NAV -->
+
+<nav>
+  <a href="#" class="logo">Koino<em>Cards</em></a>
+  <a href="https://morningkoinonia.selar.com/9n407l" target="_blank" class="nav-btn">Get It Now &mdash; $26.99 &rarr;</a>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+
+<section class="hero">
+
+  <div class="hero-left">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <div class="hero-eyebrow-text">The Ultimate Kids Edition</div>
+    </div>
+
+```
+<h1>
+  The questions
+  <em>your kids</em>
+  <span class="gold">actually answer.</span>
+</h1>
+
+<p class="hero-desc">
+  A digital PDF question deck for families with children of all ages &mdash; built across <strong>7 soul-building levels</strong> and 3 bonus editions to create the conversations that grow real connection, emotional depth, and the kind of family your children will want to come back to.
+</p>
+
+<div class="hero-actions">
+  <a href="https://morningkoinonia.selar.com/9n407l" target="_blank" class="btn-primary">
+    Get Instant Access &mdash; $26.99 &rarr;
+  </a>
+  <span class="btn-note">Digital PDF &middot; Instant download &middot; Use tonight</span>
+</div>
+```
+
+  </div>
+
+  <div class="hero-right">
+    <div class="price-tag">One-time purchase</div>
+    <div class="price-num">$26.99</div>
+    <div class="price-sub">Instant digital download &middot; All ages</div>
+
+```
+<div class="hero-includes">
+  <div class="hi">
+    <div class="hi-icon">&#127757;</div>
+    <div>
+      <div class="hi-label">7 Soul-Building Levels</div>
+      <div class="hi-desc">My World My Voice &rarr; Wisdom &amp; Character</div>
+    </div>
+  </div>
+  <div class="hi">
+    <div class="hi-icon">&#127381;</div>
+    <div>
+      <div class="hi-label">3 Bonus Editions</div>
+      <div class="hi-desc">Faith &middot; Conflict &amp; Apology &middot; Money &amp; Generosity</div>
+    </div>
+  </div>
+  <div class="hi">
+    <div class="hi-icon">&#128106;</div>
+    <div>
+      <div class="hi-label">Works for All Ages</div>
+      <div class="hi-desc">Toddlers through teenagers &mdash; same deck, every stage</div>
+    </div>
+  </div>
+</div>
+
+<a href="https://morningkoinonia.selar.com/9n407l" target="_blank" class="hero-buy-btn">
+  Get Instant Access &rarr;
+</a>
+```
+
+  </div>
+
+</section>
+
+<!-- ═══════════════ STAT BAR ═══════════════ -->
+
+<div class="stat-bar">
+  <div class="sb-item"><div class="sb-num">7</div><div class="sb-label">Levels</div></div>
+  <div class="sb-item"><div class="sb-num">3</div><div class="sb-label">Bonus Editions</div></div>
+  <div class="sb-item"><div class="sb-num">0</div><div class="sb-label">Awkward Silence</div></div>
+  <div class="sb-item"><div class="sb-num">&#8734;</div><div class="sb-label">Real Conversations</div></div>
+</div>
+
+<!-- ═══════════════ THE VOID ═══════════════ -->
+
+<section class="sec bg-ivory">
+  <div class="inn">
+    <div class="slabel">The Problem</div>
+    <h2 class="bh">When did &ldquo;how was your day?&rdquo; start getting <em>&ldquo;fine&rdquo;</em> as an answer?</h2>
+
+```
+<p class="p">You remember when they told you everything. Every playground detail, every worry, every random thought. Somewhere it got shorter. The answers got safer. The real conversations stopped happening &mdash; not because your child stopped having them, but because nobody created the space.</p>
+
+<p class="p">And for the little ones &mdash; they are <strong>bursting.</strong> Full of feelings with no words yet. Big emotions that come out sideways because nobody helped them name what was happening inside. They are not being difficult. <strong>They are waiting to be asked the right thing.</strong></p>
+
+<div class="pain-grid">
+  <div class="pain-item">
+    <div class="pain-mark">&#10006;</div>
+    <div class="pain-text"><strong>Dinner table silence</strong> &mdash; everyone together, nobody actually connecting</div>
+  </div>
+  <div class="pain-item">
+    <div class="pain-mark">&#10006;</div>
+    <div class="pain-text"><strong>&ldquo;Fine&rdquo; as an answer</strong> &mdash; when you know there is so much more underneath</div>
+  </div>
+  <div class="pain-item">
+    <div class="pain-mark">&#10006;</div>
+    <div class="pain-text"><strong>Big feelings, no words</strong> &mdash; your child overwhelmed with no safe way out</div>
+  </div>
+  <div class="pain-item">
+    <div class="pain-mark">&#10006;</div>
+    <div class="pain-text"><strong>Screen time filling the gaps</strong> &mdash; because nothing else held the room</div>
+  </div>
+</div>
+
+<div class="pullquote">
+  <p>&ldquo;We ate dinner together every night. But I realised one day that I didn&rsquo;t actually know what my children were thinking about. We talked around each other &mdash; not to each other.&rdquo;</p>
+</div>
+
+<p class="p">Connection doesn&rsquo;t require a perfect moment or a long planned evening. It requires one good question &mdash; the kind that makes a child look up, think for a second, and say something true. <strong>That is what this deck is for.</strong></p>
+```
+
+  </div>
+</section>
+
+<!-- ═══════════════ DARK BREAK ═══════════════ -->
+
+<section class="sec bg-ink">
+  <div class="inn mid">
+    <div class="slabel" style="color:#E8A825;">The Truth</div>
+    <h2 class="bh on-dark">Your child doesn&rsquo;t need more screen time.<br>They need <em>you asking questions worth answering.</em></h2>
+    <p class="p on-dark">Connection is not built through proximity. It is built through genuine curiosity &mdash; through asking what they really think, what they actually feel, what they secretly dream about. Through being the parent who made them feel like what was happening inside them <strong>was worth exploring.</strong></p>
+    <p class="p on-dark">That is the parent your child remembers. Not the one who was always there &mdash; but the one who was always genuinely interested. This deck gives you the questions. The rest is just your family, talking.</p>
+  </div>
+</section>
+
+<!-- ═══════════════ THE SHIFT ═══════════════ -->
+
+<section class="sec bg-off">
+  <div class="inn wide">
+    <div class="slabel">The Transformation</div>
+    <h2 class="bh" style="max-width:680px;">Three things that shift when your family<br><em>starts asking real questions.</em></h2>
+
+```
+<div class="transform-grid">
+  <div class="tc-big">
+    <div class="tc-num">01</div>
+    <div class="tc-title">Your child starts actually talking</div>
+    <div class="tc-body">Not the safe surface version. The real one &mdash; what they are thinking about, what scares them, what they dream of. You will learn things about your child from this deck that years of proximity alone never uncovered.</div>
+  </div>
+  <div class="tc-big">
+    <div class="tc-num">02</div>
+    <div class="tc-title">The whole family gets genuinely closer</div>
+    <div class="tc-body">When parents answer the questions honestly &mdash; without the parent-voice &mdash; something shifts. Children see you as a whole person. That is the foundation of a relationship that survives adolescence.</div>
+  </div>
+  <div class="tc-big">
+    <div class="tc-num">03</div>
+    <div class="tc-title">You discover who they&rsquo;re becoming</div>
+    <div class="tc-body">Not who you think they are &mdash; who they actually are. Their values, their fears, their sense of humour, their inner world. The child who surprises you with an answer that changes how you see them completely.</div>
+  </div>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- ═══════════════ THE 7 LEVELS ═══════════════ -->
+
+<section class="sec bg-ivory">
+  <div class="inn wide">
+    <div class="slabel">What&rsquo;s Inside</div>
+    <h2 class="bh" style="max-width:640px;">7 soul-building levels &mdash; <em>each designed to go somewhere real.</em></h2>
+
+```
+<div class="level-grid">
+
+  <div class="lc">
+    <div class="lc-num-col">
+      <div class="lc-icon">&#127757;</div>
+      <div class="lc-num">01</div>
+    </div>
+    <div class="lc-body">
+      <div class="lc-level">Level 1</div>
+      <div class="lc-title">My World, My Voice</div>
+      <div class="lc-theme">Being Heard</div>
+      <div class="lc-desc">Questions that create space for your child and you to understand each other&rsquo;s daily lives, thoughts, and needs. The level that builds the habit of honest, open conversation &mdash; so the deeper levels land safely when you get there.</div>
+    </div>
+  </div>
+
+  <div class="lc">
+    <div class="lc-num-col">
+      <div class="lc-icon">&#128514;</div>
+      <div class="lc-num">02</div>
+    </div>
+    <div class="lc-body">
+      <div class="lc-level">Level 2</div>
+      <div class="lc-title">Silly &amp; Sweet</div>
+      <div class="lc-theme">Laughter &amp; Lightness</div>
+      <div class="lc-desc">Questions designed to bond through genuine laughter &mdash; creating joyful, unforgettable moments that make love feel light again. The level that reminds your family that being together is supposed to feel good.</div>
+    </div>
+  </div>
+
+  <div class="lc">
+    <div class="lc-num-col">
+      <div class="lc-icon">&#129505;</div>
+      <div class="lc-num">03</div>
+    </div>
+    <div class="lc-body">
+      <div class="lc-level">Level 3</div>
+      <div class="lc-title">Feelings &amp; Big Emotions</div>
+      <div class="lc-theme">Emotional Expression</div>
+      <div class="lc-desc">Helps your child understand, name, and share their big feelings &mdash; safely, without shame, in a space where emotions are welcomed rather than managed. One of the most important things a parent can ever build.</div>
+    </div>
+  </div>
+
+  <div class="lc">
+    <div class="lc-num-col">
+      <div class="lc-icon">&#9203;</div>
+      <div class="lc-num">04</div>
+    </div>
+    <div class="lc-body">
+      <div class="lc-level">Level 4</div>
+      <div class="lc-title">Then &amp; Now &mdash; Memory Lane</div>
+      <div class="lc-theme">Shared Journey</div>
+      <div class="lc-desc">Questions that celebrate growth, love, and shared memories that form the fabric of your family&rsquo;s story. Helps children understand where they came from &mdash; and why that matters for where they&rsquo;re going.</div>
+    </div>
+  </div>
+
+  <div class="lc">
+    <div class="lc-num-col">
+      <div class="lc-icon">&#127775;</div>
+      <div class="lc-num">05</div>
+    </div>
+    <div class="lc-body">
+      <div class="lc-level">Level 5</div>
+      <div class="lc-title">Dreams &amp; Imaginations</div>
+      <div class="lc-theme">Inner World</div>
+      <div class="lc-desc">Discover your child&rsquo;s inner world, let them dream out loud, and plant godly vision. Children who feel seen in their imagination grow into adults who believe their dreams are possible.</div>
+    </div>
+  </div>
+
+  <div class="lc">
+    <div class="lc-num-col">
+      <div class="lc-icon">&#127795;</div>
+      <div class="lc-num">06</div>
+    </div>
+    <div class="lc-body">
+      <div class="lc-level">Level 6</div>
+      <div class="lc-title">Trust Tree</div>
+      <div class="lc-theme">Emotional Safety</div>
+      <div class="lc-desc">Builds trust, honesty, and heart-level connection &mdash; creating the kind of safety that makes your child believe they can come to you with anything. The most important level for the long-term relationship between parent and child.</div>
+    </div>
+  </div>
+
+  <div class="lc">
+    <div class="lc-num-col">
+      <div class="lc-icon">&#9878;&#65039;</div>
+      <div class="lc-num">07</div>
+    </div>
+    <div class="lc-body">
+      <div class="lc-level">Level 7</div>
+      <div class="lc-title">Wisdom &amp; Character</div>
+      <div class="lc-theme">Who They&rsquo;re Becoming</div>
+      <div class="lc-desc">Questions that shape who your child is becoming &mdash; instilling godly values, teaching moral reasoning, and giving them conversations that will still be working in them twenty years from now.</div>
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+</section>
+
+<!-- ═══════════════ 3 BONUS EDITIONS ═══════════════ -->
+
+<section class="sec bg-wh">
+  <div class="inn wide">
+    <div class="slabel">Also Inside</div>
+    <h2 class="bh" style="max-width:600px;">Plus 3 bonus editions that <em>expand the deck even further.</em></h2>
+
+```
+<div class="bonus-row">
+
+  <div class="bc bc1">
+    <div class="bc-tag">Bonus Edition 01</div>
+    <span class="bc-icon">&#128218;</span>
+    <div class="bc-title">Faith &amp; Prayer Edition</div>
+    <div class="bc-desc">Conversations that nurture spiritual depth and help your child grow in their own personal walk with God. Not religion as performance &mdash; but faith as relationship. For families who want their children to own their faith, not just inherit it.</div>
+  </div>
+
+  <div class="bc bc2">
+    <div class="bc-tag">Bonus Edition 02</div>
+    <span class="bc-icon">&#9878;&#65039;</span>
+    <div class="bc-title">Conflict, Correction &amp; Apology Edition</div>
+    <div class="bc-desc">Guide your child through hard moments with grace, responsibility, and genuine reconciliation. Teaching them that conflict is survivable, repair is always possible, and owning your actions is strength &mdash; not weakness.</div>
+  </div>
+
+  <div class="bc bc3">
+    <div class="bc-tag">Bonus Edition 03</div>
+    <span class="bc-icon">&#128176;</span>
+    <div class="bc-title">Money, Generosity &amp; Contentment Edition</div>
+    <div class="bc-desc">Plant early seeds of stewardship, gratitude, and a giving heart. Questions that teach children the difference between enough and more &mdash; and how to build a healthy relationship with money from the very beginning.</div>
+  </div>
+
+</div>
+```
+
+  </div>
+</section>
+
+<!-- ═══════════════ TESTIMONIALS ═══════════════ -->
+
+<section class="sec bg-off">
+  <div class="inn wide">
+    <div class="slabel">What Families Say</div>
+    <h2 class="bh" style="max-width:520px;">Families who started asking &mdash; <em>and couldn&rsquo;t stop.</em></h2>
+
+```
+<div class="testi-grid">
+  <div class="tcard">
+    <div class="tcard-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <div class="tcard-text">&ldquo;We use this at Sunday dinners and it completely changed everything. My son, who hardly says anything, talked for twenty minutes during the Dreams level. I learned more about him in one evening than I had in months.&rdquo;</div>
+    <div class="tcard-name">Funke A.</div>
+    <div class="tcard-role">Mother of three &middot; Abuja, Nigeria</div>
+  </div>
+  <div class="tcard">
+    <div class="tcard-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <div class="tcard-text">&ldquo;The Feelings level helped my daughter name things she&rsquo;d been carrying silently. After one session she came to me the next day to say something that had been bothering her for weeks. She told me it felt safer to talk after we&rsquo;d played.&rdquo;</div>
+    <div class="tcard-name">Rachel &amp; Mark T.</div>
+    <div class="tcard-role">Parents of four &middot; London, UK</div>
+  </div>
+  <div class="tcard">
+    <div class="tcard-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <div class="tcard-text">&ldquo;My kids are 6 to 14 and I was worried it wouldn&rsquo;t work for all of them. It absolutely does. We use it every Friday night and it&rsquo;s become the thing they look forward to most in the whole week.&rdquo;</div>
+    <div class="tcard-name">Blessing O.</div>
+    <div class="tcard-role">Mother &middot; Toronto, Canada</div>
+  </div>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- ═══════════════ PROMISE ═══════════════ -->
+
+<div class="promise">
+  <h3>
+    The conversations you have with your child today<br>
+    become the voice in their head <em>for the rest of their life.</em><br>
+    Make them worth hearing.
+  </h3>
+</div>
+
+<!-- ═══════════════ CTA ═══════════════ -->
+
+<section class="cta-section" id="get">
+  <div class="cta-inner">
+    <div class="cta-kicker">Get Instant Access Today</div>
+    <div class="cta-h">
+      Give your family<br>conversations <em>worth having.</em>
+    </div>
+    <p class="cta-sub">
+      The Ultimate Kids Edition &mdash; 7 soul-building levels + 3 bonus editions &mdash; beautifully designed PDF yours instantly. Use tonight at the dinner table.
+    </p>
+
+```
+<div class="cta-price-display">
+  <span class="cta-dollar">$</span>
+  <span class="cta-price-big">26.99</span>
+</div>
+<div class="cta-price-note">One-time purchase &middot; Instant digital download &middot; No shipping</div>
+
+<a href="https://morningkoinonia.selar.com/9n407l" target="_blank" class="cta-main-btn">
+  Get Instant Access &mdash; $26.99 &rarr;
+</a>
+
+<div class="cta-grid">
+  <div class="ci"><div class="ci-dot"></div><span><strong>Level 1</strong> My World, My Voice</span></div>
+  <div class="ci"><div class="ci-dot"></div><span><strong>Level 2</strong> Silly &amp; Sweet</span></div>
+  <div class="ci"><div class="ci-dot"></div><span><strong>Level 3</strong> Feelings &amp; Big Emotions</span></div>
+  <div class="ci"><div class="ci-dot"></div><span><strong>Level 4</strong> Memory Lane</span></div>
+  <div class="ci"><div class="ci-dot"></div><span><strong>Level 5</strong> Dreams &amp; Imaginations</span></div>
+  <div class="ci"><div class="ci-dot"></div><span><strong>Level 6</strong> Trust Tree</span></div>
+  <div class="ci"><div class="ci-dot"></div><span><strong>Level 7</strong> Wisdom &amp; Character</span></div>
+  <div class="ci"><div class="ci-dot"></div><span><strong>Bonus</strong> Faith &amp; Prayer Edition</span></div>
+  <div class="ci"><div class="ci-dot"></div><span><strong>Bonus</strong> Conflict &amp; Apology Edition</span></div>
+  <div class="ci"><div class="ci-dot"></div><span><strong>Bonus</strong> Money &amp; Generosity Edition</span></div>
+</div>
+
+<div class="cta-divider"></div>
+<div class="cta-guar">
+  &#128274; Secure checkout via Selar &middot; Instant access after payment &middot; No physical items shipped<br>
+  Questions? <a href="mailto:tomiwabankole172@gmail.com">tomiwabankole172@gmail.com</a> &mdash; I&rsquo;ll get back to you personally.
+</div>
+```
+
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+
+<footer>
+  <div>
+    <div class="footer-brand">Ultimate <em>Kids Edition</em></div>
+    <p>By KoinoCards &middot; T.BANKS</p>
+  </div>
+  <p style="text-align:right;">
+    <a href="mailto:tomiwabankole172@gmail.com">tomiwabankole172@gmail.com</a><br>
+    Digital product &middot; No physical items shipped<br>
+    Thank you for investing in your family&rsquo;s conversations. &mdash; T.BANKS xx
+  </p>
+</footer>
+
+</body>
+</html>
